@@ -1,0 +1,44 @@
+body {
+    font-family: "Open Sans" ;
+}
+
+h2 {
+    margin-top: -5px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 20px;
+    background-color: rgb(179, 118, 168);
+    border: 3px solid black;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.celula{
+    width: 75px;
+    height: 65px;
+    font-size: 30pt;
+    margin: 4px 2px;
+    font-weight: 300;
+    padding-top: 10px;
+    text-align: center;
+    background-color: lightpink;
+} 
+
+.botao-recarregar {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid rgb(12, 11, 11);
+    background-color: rgb(179, 118, 168);
+    color: rgb(22, 23, 24);
+    cursor: pointer;
+}
