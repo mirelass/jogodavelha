@@ -15,3 +15,23 @@ document.addEventListener("click",(event)) =>) {
     }
 });
 
+function jogar(id){
+
+    const celula= document.getElementById(id);
+
+    if (celula.textContent===""){
+
+        turno = chrgarTurno ? JOGADOR_X : JOGADOR_0;
+
+        checarTurno = !checarTurno;
+
+        celula.textContent = turno;
+
+        celula.classList.add(turno);
+
+        celula.removeEventListener("click", jogar);
+
+        verificarVencedor(turno);
+    }
+}
+
